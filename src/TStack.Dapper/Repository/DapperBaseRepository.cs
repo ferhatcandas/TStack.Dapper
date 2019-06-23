@@ -32,16 +32,7 @@ namespace TStack.Dapper.Repository
         }
         internal T DapperProcess<T>(Func<T> func)
         {
-            Open();
-            OpenTranscation();
-            var response = func();
-            CommitTranscation();
-            Close();
-            return response;
-        }
-        internal async Task<T> DapperProcessAsync<T>(Func<Task<T>> func)
-        {
-            return await Task.Run<T>(() =>
+            try
             {
                 Open();
                 OpenTranscation();
@@ -49,6 +40,19 @@ namespace TStack.Dapper.Repository
                 CommitTranscation();
                 Close();
                 return response;
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+
+        }
+        internal async Task<T> DapperProcessAsync<T>(Func<Task<T>> func)
+        {
+            return await Task.Run<T>(() =>
+            {
+                return DapperProcess(func);
             });
 
         }

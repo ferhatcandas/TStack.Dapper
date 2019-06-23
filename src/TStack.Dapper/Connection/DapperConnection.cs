@@ -3,7 +3,7 @@ using System.Data;
 
 namespace TStack.Dapper.Connection
 {
-    public class DapperConnection
+    public abstract class DapperConnection
     {
         public DapperConnection(string connStr, int commandTimeout = 30)
         {
