@@ -2,10 +2,24 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>Ferhat Candas</Authors>
+    <Description>Dapper is a micro orm tool for .Net ado providers. The purpose of this library is to provide a tool that can be used in an easy and generic structure.</Description>
+    <PackageProjectUrl>https://github.com/ferhatcandas/TStack.Dapper</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/ferhatcandas/TStack.Dapper</RepositoryUrl>
+    <PackageTags>dapper, tstack, orm, generic</PackageTags>
+    <NeutralLanguage>English</NeutralLanguage>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Dapper.Contrib" Version="1.60.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\LICENSE.txt">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
