@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using Dapper.Contrib.Extensions;
 
-namespace TStack.Dapper.Extensions
+namespace TStack.Dapper.Helper
 {
     /// <summary>
     /// Specify the destination table name mapped to the entity.

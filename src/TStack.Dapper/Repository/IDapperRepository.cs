@@ -5,10 +5,9 @@ using TStack.Dapper.Entity;
 
 namespace TStack.Dapper.Repository
 {
-    public interface IDapperRepository<TDocument, TPrimary, TContext> where
+    public interface IDapperRepository<TDocument, TPrimary> where
         TDocument : class, IDapperEntity<TPrimary>, new()
         where TPrimary : struct
-        where TContext : DapperConnection, new()
     {
         int AddOne(TDocument model);
         Task<int> AddOneAsync(TDocument model);

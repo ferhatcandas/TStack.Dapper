@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using TStack.Dapper.Entity;
-using TStack.Dapper.Extensions;
+using TStack.Dapper.Helper;
 
 namespace TStack.Dapper.Tests
 {

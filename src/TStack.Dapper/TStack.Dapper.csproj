@@ -9,6 +9,8 @@
     <PackageTags>dapper, tstack, orm, generic</PackageTags>
     <NeutralLanguage>English</NeutralLanguage>
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <Version>1.0.1</Version>
+    <PackageReleaseNotes>dapper repository creation add ctor for set connection on instance</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
