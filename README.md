@@ -49,19 +49,19 @@ To use database classes must be inherited from the "IDapperEntity" class before
 
 For connection class
 ```csharp
- public class TestConnection : DapperConnection
-    {
-        public TestConnection() : base(@"Server=.\SQLEXPRESS;Database=TESTDB;Trusted_Connection=True;", 30)
-        {
-        }
-    }
+public class TestConnection : DapperConnection
+{
+	public TestConnection() : base(@"Server=.\SQLEXPRESS;Database=TESTDB;Trusted_Connection=True;", 30)
+	{
+	}
+}
 ```
 
 For repository
 ```csharp
-  public class EmployeeRepository : DapperRepository<Employee, int, TestConnection>
-    {
-    }
+public class EmployeeRepository : DapperRepository<Employee, int, TestConnection>
+{
+}
 ```
 
 
